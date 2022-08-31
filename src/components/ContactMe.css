@@ -1,0 +1,21 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height:80vh
+}
+
+.contactMe-form {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-gap: 10px;
+    grid-gap: 5px;
+    max-width: 500px;
+    align-items: center;
+}
+.section-container {
+    display: flex;
+    flex-direction: column;
+}

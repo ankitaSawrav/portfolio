@@ -1,0 +1,16 @@
+.proj-image {
+    height: 250px;
+    width: 350px;
+}
+.Projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.check {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
