@@ -18,7 +18,8 @@ function App() {
       <div className='section-conatiner'> 
       {displaySection==="aboutMe"? <AboutMe/>:(displaySection==="Projects"? <Projects/>:<ContactMe/>)} 
       </div>
-      <Footer></Footer>
+      <footer><Footer/></footer>
+      
     </div>
   );
 }

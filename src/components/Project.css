@@ -1,7 +1,7 @@
-.proj-image {
+/* .proj-image {
     height: 250px;
     width: 350px;
-}
+} */
 .Projects-container {
     display: flex;
     flex-direction: column;

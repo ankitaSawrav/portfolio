@@ -2,7 +2,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions, Divider } from '@mui/material';
+import { Button, CardActionArea, CardActions, Divider,Paper } from '@mui/material';
 import './Project.css';
 
 function Project({name,synopsis,github,imageurl,liveSite,id,techStats}){
@@ -16,12 +16,16 @@ function Project({name,synopsis,github,imageurl,liveSite,id,techStats}){
         //     <a  className='link-Btn' href={github}>View Code Repo</a>
         //     <a className='link-Btn'href={liveSite}>Live Site</a>
         // </div>
-        <Card sx={{ maxWidth: 345  ,margin:'10px'}}>
+   
+        <Card sx={{ maxWidth: 345  ,
+                    margin:'10px'
+                    }}>
             <CardMedia
                 component="img"
                 alt={`${name}pic`}
                 
                 width='300'
+             
                 image={imageurl} 
             />
             <Divider></Divider>
@@ -32,22 +36,24 @@ function Project({name,synopsis,github,imageurl,liveSite,id,techStats}){
                 <Typography variant="body2" color="text.secondary">
                     {synopsis}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
-                   <bold>  {techStats} </bold>
+                <Typography variant="body2" color="text.secondary" >
+                    {techStats} 
                 </Typography>
             </CardContent>
           
-            <CardActions sx={{}}>
+            <CardActions >
                 <Button 
                     href={github}
                     size="small">View Code Repo
                 </Button>
                 <Button
+                    h
                     href={liveSite}
                     size="small">Live Site
                 </Button>
             </CardActions>
     </Card>
+
     )
 }
 export default Project

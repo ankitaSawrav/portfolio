@@ -1,4 +1,6 @@
 import Project from './Project.js'
+import {Grid} from '@mui/material'
+import './Project.css';
 
 function Projects () {
     const projectsData = [
@@ -42,22 +44,87 @@ function Projects () {
                 <h1>Projects</h1>
             </div>
             <div className='check'>
-            { projectsData.map((project, index) =>{
-                console.log(project,"project")
+
+                { projectsData.map((project, index) =>{
+                    console.log(project,"project")
                         return (
                         
-                        <Project  
-                            name = {project.name}
-                            synopsis = {project.synopsis}
-                            github = {project.github}
-                            imageurl = {project.imageurl}
-                            liveSite = {project.liveSite}
-                            techStats = {project.techStats}
-                            key = {index}
-                            id={index}
-                        ></Project>
+                            <Project  
+                                name = {project.name}
+                                synopsis = {project.synopsis}
+                                github = {project.github}
+                                imageurl = {project.imageurl}
+                                liveSite = {project.liveSite}
+                                techStats = {project.techStats}
+                                key = {index}
+                                id={index}
+                            ></Project>
+
+                   
                         )
             })}
+   
+{/* 
+                <Grid
+                    container
+                    direction="row"
+                    justifyContent="center"
+                    alignItems="center"
+                    flexWrap="wrap"
+                  
+                    >
+                         <Grid item xs={6} >
+                         <Project  
+                                name = "Wordle"
+                                synopsis = "A Plant Buddy app to help you take care of your plants made with lots of love from Magdelina,Ellanor and me. Its a single page app designed for users to search the plants and add them to their green house and look at the care details.It displays current weather detail for user"
+                                github ="https://github.com/ankitaSawrav/notely-note-taking"
+                                imageurl = "../images/wordle.png"
+                                liveSite = "https://github.com/ankitaSawrav/notely-note-taking"
+                                techStats = 'Express | Node.js | PostgreSQL | Rest API'
+                                // key = {index}
+                                // id={index}
+                            ></Project>
+                         </Grid>
+                         <Grid item xs={6}>
+                         <Project  
+                                name = "Wordle"
+                                synopsis = "A Plant Buddy app to help you take care of your plants made with lots of love from Magdelina,Ellanor and me. Its a single page app designed for users to search the plants and add them to their green house and look at the care details.It displays current weather detail for user"
+                                github ="https://github.com/ankitaSawrav/notely-note-taking"
+                                imageurl = "../images/wordle.png"
+                                liveSite = "https://github.com/ankitaSawrav/notely-note-taking"
+                                techStats = 'Express | Node.js | PostgreSQL | Rest API'
+                                // key = {index}
+                                // id={index}
+                            ></Project>
+                         </Grid>
+                         <Grid item xs={6} >
+                         <Project  
+                                name = "Wordle"
+                                synopsis = "A Plant Buddy app to help you take care of your plants made with lots of love from Magdelina,Ellanor and me. Its a single page app designed for users to search the plants and add them to their green house and look at the care details.It displays current weather detail for user"
+                                github ="https://github.com/ankitaSawrav/notely-note-taking"
+                                imageurl = "../images/wordle.png"
+                                liveSite = "https://github.com/ankitaSawrav/notely-note-taking"
+                                techStats = 'Express | Node.js | PostgreSQL | Rest API'
+                                // key = {index}
+                                // id={index}
+                            ></Project>
+                         </Grid>
+                         <Grid item xs={6}>
+                         <Project  
+                                name = "Wordle"
+                                synopsis = "A Plant Buddy app to help you take care of your plants made with lots of love from Magdelina,Ellanor and me. Its a single page app designed for users to search the plants and add them to their green house and look at the care details.It displays current weather detail for user"
+                                github ="https://github.com/ankitaSawrav/notely-note-taking"
+                                imageurl = "../images/wordle.png"
+                                liveSite = "https://github.com/ankitaSawrav/notely-note-taking"
+                                techStats = 'Express | Node.js | PostgreSQL | Rest API'
+                                // key = {index}
+                                // id={index}
+                            ></Project>
+                         </Grid>
+
+
+                    </Grid> */}
+
             </div>
         
         </div>
