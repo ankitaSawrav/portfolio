@@ -14,3 +14,6 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+.MuiCardActions-root.MuiCardActions-spacing.css-1t6e9jv-MuiCardActions-root {
+    align-self: end;
+}

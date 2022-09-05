@@ -2,7 +2,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions, Divider,Paper } from '@mui/material';
+import { Button, CardActionArea, CardActions, Divider,Grid,Paper } from '@mui/material';
 import './Project.css';
 
 function Project({name,synopsis,github,imageurl,liveSite,id,techStats}){
@@ -18,18 +18,21 @@ function Project({name,synopsis,github,imageurl,liveSite,id,techStats}){
         // </div>
    
         <Card sx={{ maxWidth: 345  ,
-                    margin:'10px'
+                    margin:'10px',
+                    display:'Grid',
+                    minHeight:500,
+                    boxShadow: 8,
                     }}>
+
             <CardMedia
                 component="img"
                 alt={`${name}pic`}
-                
                 width='300'
-             
+                height='300'
+                display ='cover'
                 image={imageurl} 
             />
-            <Divider></Divider>
-            <CardContent>
+            <CardContent >
                 <Typography gutterBottom variant="h5" component="div">
                     {name}
                 </Typography>
@@ -37,7 +40,7 @@ function Project({name,synopsis,github,imageurl,liveSite,id,techStats}){
                     {synopsis}
                 </Typography>
                 <Typography variant="body2" color="text.secondary" >
-                    {techStats} 
+                <span style={{fontWeight: 'bold'}}>{techStats} </span> 
                 </Typography>
             </CardContent>
           
@@ -47,7 +50,6 @@ function Project({name,synopsis,github,imageurl,liveSite,id,techStats}){
                     size="small">View Code Repo
                 </Button>
                 <Button
-                    h
                     href={liveSite}
                     size="small">Live Site
                 </Button>

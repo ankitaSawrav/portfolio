@@ -4,9 +4,12 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    height:80vh
-}
+    height:80vh ;
 
+}
+h1 {
+    font-size: xxx-large;
+}
 .contactMe-form {
     display: grid;
     grid-template-columns: 300px;

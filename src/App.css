@@ -41,10 +41,13 @@
   width: 100vw;
   height: 100vh;
   background-color: aqua;
+  
 }
 body {
   margin: 0px;
   padding: 0px;
+  font-family: 'Montserrat', sans-serif !important;
+  
 }
 .navBar {
   background-color:#021e39;
@@ -138,8 +141,8 @@ footer {
   align-items: center;
 }
 
-/* 
 
+/* 
 
 section-conatiner{
 
@@ -148,3 +151,25 @@ section-conatiner{
   
     overflow: scroll;}
     */
+
+    li:after {
+      display:block;
+      content: '';
+      border-bottom: solid 3px #019fb6;  
+      transform: scaleX(0);  
+      transition: transform 250ms ease-in-out;
+    }
+    li:hover:after { transform: scaleX(1); }
+    li.fromRight:after{ transform-origin:100% 50%; } 
+    li.fromLeft:after{  transform-origin:  0% 50%; } 
+/*  */
+    a:after {
+      display:block;
+      content: '';
+      border-bottom: solid 3px #019fb6;  
+      transform: scaleX(0);  
+      transition: transform 250ms ease-in-out;
+    }
+    a:hover:after { transform: scaleX(1); }
+    a.fromRight:after{ transform-origin:100% 50%; } 
+    a.fromLeft:after{  transform-origin:  0% 50%; } 
