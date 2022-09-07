@@ -36,10 +36,13 @@
     transform: rotate(360deg);
   }
 } */
+body>#root>div {
+  min-height: 100vh;
+}
 
 .App {
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  min-height: 100vh; */
   background-color: aqua;
   
 }
@@ -85,9 +88,15 @@ body {
   display:flex;
 }
 /* this resolves the navbar and content overlap issue fixed  */
+div.main-container {
+  display: flex;
+  flex-direction: column;
+}
 .section-container {
   padding-top: 80px;
+  flex-grow: 1;
 }
+
 a {
   color: white;
   
@@ -117,8 +126,10 @@ svg {
     position: absolute;
     right:0px;
     top:80px;
-    height: 230px;
-    max-height: 230px;
+    /* height: 230px;
+    max-height: 230px; */
+    height: 300px;
+    max-height: 300px;
     width:100%;
     background-color: #021e39;
     display:flex;
