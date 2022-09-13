@@ -22,7 +22,9 @@ function NavBar ({selectDisplay}) {
                 <li id = "AboutMe" onClick={()=>handleSelection("aboutMe")} > About Me </li>
                 <li id = "Projects" onClick={()=>handleSelection("Projects")}> Projects </li>
                 <li id = "ContactMe" onClick={()=>handleSelection("ContactMe")} > ContactMe </li>
+                {/* eslint-disable-next-line */}
                 <a id ="githubLink" href="https://github.com/ankitaSawrav" target="_blank"><GitHubIcon/></a>
+                {/* eslint-disable-next-line */}
                 <a id ="linkedin-link" href="https://www.linkedin.com/in/ankita-sawrav/" target="_blank"><LinkedInIcon/></a>
             </ul> 
             <button onClick= {handleButtonChange}><ReorderIcon/></button>

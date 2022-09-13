@@ -2,7 +2,8 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions, Divider,Grid,Paper } from '@mui/material';
+import { Button, CardActions,  } from '@mui/material';
+// import { CardActionArea, Divider,Grid,Paper } from '@mui/material';
 import './Project.css';
 
 function Project({name,synopsis,github,imageurl,liveSite,id,techStats}){
