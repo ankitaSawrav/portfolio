@@ -25,7 +25,7 @@ function Projects () {
             name: "Plantr",
             synopsis: "A Plant Buddy app to help you take care of your plants made with lots of love from Magdelina,Ellanor and me. Its a single page app designed for users to search the plants and add them to their green house and look at the care details.It displays current weather detail for user",
             imageurl:"../images/plantr.png",
-            github:"https://github.com/ankitaSawrav/notely-note-taking",
+            github:"https://github.com/magdalenamae/plantr",
             liveSite: "https://plntr.herokuapp.com/",
             techStats:'Express | Node.js | PostgreSQL | Rest API'
         },
@@ -33,8 +33,8 @@ function Projects () {
             name: "Yaadein..",
             synopsis: "Yaadein is a memory journal where you can capture your special moments forever. This is a single page react application.",
             imageurl:"../images/yaadein.png",
-            github:"https://github.com/ankitaSawrav/notely-note-taking",
-            liveSite: "https://plntr.herokuapp.com/",
+            github:"https://github.com/ankitaSawrav/memoriesapp",
+            liveSite: "https://sheltered-reef-25477.herokuapp.com/",
             techStats:'React | PostgreSQL | CSS | Cloudinary'
         },
 
