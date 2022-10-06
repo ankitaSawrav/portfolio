@@ -18,16 +18,21 @@ function NavBar ({selectDisplay}) {
     
     return (
         <div className='navBar'>
+            <div className='leftside'>
+                <h1>AnkitaSawrav</h1>
+            </div>
+            <div className='rightside'>
             <ul className='links' id={showLinks ? "hidden": ""}>
-                <li id = "AboutMe" onClick={()=>handleSelection("aboutMe")} > About Me </li>
+                <li id = "AboutMe" onClick={()=>handleSelection("aboutMe")} > About</li>
                 <li id = "Projects" onClick={()=>handleSelection("Projects")}> Projects </li>
-                <li id = "ContactMe" onClick={()=>handleSelection("ContactMe")} > ContactMe </li>
+                <li id = "ContactMe" onClick={()=>handleSelection("ContactMe")} > Contact </li>
                 {/* eslint-disable-next-line */}
                 <a id ="githubLink" href="https://github.com/ankitaSawrav" target="_blank"><GitHubIcon/></a>
                 {/* eslint-disable-next-line */}
                 <a id ="linkedin-link" href="https://www.linkedin.com/in/ankita-sawrav/" target="_blank"><LinkedInIcon/></a>
             </ul> 
             <button onClick= {handleButtonChange}><ReorderIcon/></button>
+            </div>
         </div>
     )
 }

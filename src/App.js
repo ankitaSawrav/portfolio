@@ -15,7 +15,7 @@ function App() {
   return (
     <div className='main-container'>
       <NavBar selectDisplay = {setDisplaySection}></NavBar>
-      <div className='section-conatiner'> 
+      <div className='section-conatiner' style={{marginTop: "5rem"}}> 
       {displaySection==="aboutMe"? <AboutMe/>:(displaySection==="Projects"? <Projects/>:<ContactMe/>)} 
       </div>
       <footer><Footer/></footer>
