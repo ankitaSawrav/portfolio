@@ -5,7 +5,7 @@ import AboutMe from './components/AboutMe.js';
 import ContactMe from './components/ContactMe.js';
 import Footer from './components/Footer.js';
 import Projects from "./components/Projects.js";
-import { useState} from 'react'
+import React, { useState} from 'react'
 
 function App() {
   const [displaySection, setDisplaySection]= useState("aboutMe")
