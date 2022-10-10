@@ -1,13 +1,18 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import TextField from '@mui/material/TextField';
 import './ContactMe.css'
 import {Button} from '@mui/material';
+import Notification from './Notification.js';
 
 
 function ContactMe() {
 
     const form = useRef();
+
+    const [notify,setNotify] = useState({ isOpen:false, message: "",type:""})
+
+
 
     const sendEmail = (e) => {
       e.preventDefault();
@@ -21,9 +26,19 @@ function ContactMe() {
             )
         .then((result) => {
             console.log(result.text);
+            setNotify({
+                isOpen:true,
+                message:"email send successfully",
+                type:"success"
+            })
 
         }, (error) => {
             console.log(error.text);
+            setNotify({
+                isOpen:true,
+                message:"an error occured!!",
+                type:"error"
+            })
         });
     };
 
@@ -78,7 +93,12 @@ function ContactMe() {
                 
               
             </form>
-      
+            
+            <Notification 
+                notify ={notify}
+                setNotify= {setNotify}>
+
+            </Notification>
 
         </section>
     )
