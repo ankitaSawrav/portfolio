@@ -4,6 +4,7 @@ import ReorderIcon from '@mui/icons-material/Reorder';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
+
 function NavBar ({selectDisplay}) {
     const [showLinks,setShowLinks] =  useState(false)
 
@@ -19,7 +20,8 @@ function NavBar ({selectDisplay}) {
     return (
         <div className='navBar'>
             <div className='leftside'>
-                <h1>AnkitaSawrav</h1>
+                <h1 className='logo'>as.</h1>
+                
             </div>
             <div className='rightside'>
             <ul className='links' id={showLinks ? "hidden": ""}>

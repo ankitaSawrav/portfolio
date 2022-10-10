@@ -9,11 +9,11 @@ function AboutMe() {
             <div className="decription">
                 <div className='anki-intro'>
                     <h2>Hi, I am </h2>
-                    <br></br>
+                    {/* <br></br> */}
                     <h2>
                         <Typewriter
                             options={{
-                                strings: ['Ankita Sawrav.', 'a Junior Software Developer.'],
+                                strings: ['Ankita Sawrav.', 'Junior Software Developer.'],
                                 autoStart: true,
                                 loop: true,
                             }}
@@ -23,11 +23,13 @@ function AboutMe() {
                 <div className='abtme-sub-container'>
                    
                     <p>
-                    I am a junior software developer with a passion for learning and solving real-world problems. My journey to become a professional software developer began with undertaking the Software Engineering immersive course at General Assembly Australia. I have grown a lot as an engineer since then, and it has been a gratifying experience so far. Learning how to build apps that solve real world problems has been an exhilarating Experience. I have been and will be building more apps as I go. As a continuous learner, I will keep improving my development skills to become a better developer than I was yesterday.
+                    I am a junior software developer with a passion for learning and solving real-world problems. My journey to become a professional software developer began with undertaking the Software Engineering immersive course at General Assembly Australia. I have grown a lot as an engineer since then, and it has been a gratifying experience so far.
+                    {/* Learning how to build apps that solve real world problems has been an exhilarating Experience. I have been and will be building more apps as I go. As a continuous learner, I will keep improving my development skills to become a better developer than I was yesterday. */}
                     </p>
                     <p>
                     I am an ex-software tester and have been a full time parent for the last 7 years. Over this time I have experienced the power of technology, first hand, while contributing towards building it and also by consuming it to help my children grow better. This is what I want to continue on while I switch to, now, developing these solutions.
                     </p>
+                    
                     <p>
                     Playing with my kids, reading books to them, scribbling, and painting are some of my favorite things to do when not coding.
                     </p>
@@ -35,7 +37,7 @@ function AboutMe() {
                
             </div>
             <section className="skills-tab">
-                <h1>Skills</h1>
+                <h1>My Skills<span className='sub-titile-skill'> (so far) </span></h1>
                 
                 <div>
 
