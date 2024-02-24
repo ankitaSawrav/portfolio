@@ -20,7 +20,7 @@ function NavBar ({selectDisplay}) {
     return (
         <div className='navBar'>
             <div className='leftside'>
-                <h1 className='logo'>as.</h1>
+                <h1 className='logo'>as</h1>
                 
             </div>
             <div className='rightside'>

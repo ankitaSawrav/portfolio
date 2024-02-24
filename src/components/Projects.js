@@ -1,9 +1,10 @@
 import Project from './Project.js'
 // import {Grid} from '@mui/material'
 import './Project.css';
+import projectsData from './ProjectsDetails.js';
 
 function Projects () {
-    const projectsData = [
+    const projectsDataa = [
         {
             name: "Wordle",
             synopsis: "An implementation of the classic Wordle",
